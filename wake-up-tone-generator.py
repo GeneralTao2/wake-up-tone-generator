@@ -2,7 +2,7 @@ import numpy as np
 import sounddevice as sd
 
 # Constants
-SAMPLE_RATE = 96000  # Use 96000 Hz if your hardware supports it, for better fidelity
+SAMPLE_RATE = 44100  # Sample rate in Hz (must be > 50KHz for 25KHz signal, but most sound cards max out at 44.1KHz)
 FREQ = 25000  # 25kHz
 
 # Generate one second of the waveform
